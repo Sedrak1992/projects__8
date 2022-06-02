@@ -13,6 +13,7 @@ body {
   color: #ff3300;
   font-size: 80px;
   text-align: center;
+  margin-top: 25px;
 }
 #Container {
   margin: 50px auto;

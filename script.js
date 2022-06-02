@@ -6,10 +6,11 @@ const handleClick = (event) => {
     event.target.style.backgroundColor = "#ededed";
     event.target.textContent = "POP!";
     event.target.className = "btmColor";
-
+     
     let listt = document.querySelectorAll(".item");
     if (listt.length === 0) {
       Containers.style.display = "none";
+      // Containers.innerHTML = "";
 
       gallery.style.display = "block";
     }
