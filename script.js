@@ -1,21 +1,6 @@
 const randomColor = () =>
   `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 
-for (let i = 0; i < 20; i++) {
-  const div = document.createElement("div");
-  div.addEventListener("mouseenter", handleClick);
-  const color = randomColor();
-  div.style.backgroundColor = color;
-  div.style.color = color;
-  div.classList.add("item");
-  document.querySelector("#Container").append(div);
-}
-
-const items = document.querySelectorAll(".item");
-const Containers = document.getElementById("Container");
-let gallery = document.getElementById("yay-no-balloons");
-gallery.style.display = "none";
-
 const handleClick = (event) => {
   if (event.target.className === "item") {
     event.target.style.backgroundColor = "#ededed";
@@ -31,6 +16,17 @@ const handleClick = (event) => {
   }
 };
 
-div.forEach((items) => {
-//   items.addEventListener("mouseenter", handleClick);
-});
+for (let i = 0; i < 20; i++) {
+  const div = document.createElement("div");
+  div.addEventListener("mouseenter", handleClick);
+  const color = randomColor();
+  div.style.backgroundColor = color;
+  div.style.color = color;
+  div.classList.add("item");
+  document.querySelector("#Container").append(div);
+}
+
+const items = document.querySelectorAll(".item");
+const Containers = document.getElementById("Container");
+let gallery = document.getElementById("yay-no-balloons");
+gallery.style.display = "none";
