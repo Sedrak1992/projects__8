@@ -11,12 +11,10 @@ const handleClick = (event) => {
     if (listt.length === 0) {
       Containers.style.display = "none";
       // Containers.innerHTML = "";
-
       gallery.style.display = "block";
     }
   }
 };
-
 for (let i = 0; i < 20; i++) {
   const div = document.createElement("div");
   div.addEventListener("mouseenter", handleClick);
